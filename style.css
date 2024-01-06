@@ -1,0 +1,359 @@
+body {
+    background-color: rgb(27, 22, 22);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar {
+    background-color: rgb(48, 34, 46);
+    padding: 1.2rem;
+    text-align: right;
+    position: sticky;
+    top: 0;
+}
+
+.navbar .port {
+    color: plum;
+    margin-left: 30px;
+    font-size: 30px;
+    text-align: left;
+    float: left;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.navbar a {
+    color: plum;
+    margin-right: 30px;
+    font-size: 30px;
+    text-align: right;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color:rgb(48, 34, 46) ;
+    background-color: plum;
+    border-radius: 10%;
+}
+
+.name {
+    color: plum;
+    font-size: 2rem;
+    margin-left: 15rem;
+    margin-top: 10rem;
+    text-align: left;
+}
+
+.name span {
+    font-size: 6rem;
+    color: plum;
+}
+
+.heading {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.heading span {
+    background: plum;
+    color: rgb(48, 34, 46);
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+
+.image {
+    margin-left: 45rem;
+    margin-top: -23rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.image img {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    display: block;
+}
+
+.name .descri a img {
+    border: 0px solid;
+    height: 3rem;
+    width: 3rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    margin: 0.8rem;
+}
+
+.me2 {
+    margin-left: 5rem;
+    margin-top: 3rem;
+    overflow: hidden;
+}
+
+.me2 img {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    display: block;
+}
+
+.abt {
+    color: whitesmoke;
+    position: absolute;
+    margin-left: 26rem;
+    margin-top: -20rem;
+    font-size: 28px;
+    padding: 3rem;
+}
+
+.contact img {
+    border: 0px solid;
+    height: 3rem;
+    width: 3rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    margin-left: -15rem;
+}
+
+.contact span {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: aliceblue;
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+/*skills section*/
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.box a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    width: 160px; /* Set a fixed width */
+    height: 110px; /* Set a fixed height */
+    background-color: #37013a;
+    border-radius: 5px;
+    margin: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.box a img {
+    width: 40px; /* Adjust the width of the icon */
+    height: 40px; /* Adjust the height of the icon */
+    margin-right: 0.5rem; /* Add some spacing between the icon and text */
+}
+.box a:hover {
+    background-color: rgb(230, 91, 230);
+}
+
+
+.box a.active {
+    background-color:rgb(230, 91, 230);
+    
+}
+
+
+
+/*projects*/
+.image1 {
+        height: auto; /* Maintain aspect ratio for project image */
+        width: 100%; /* Adjust width for smaller screens */
+}
+
+.image1 {
+    
+    max-width: 30%; /* Ensure the image doesn't exceed its container width */
+    border-radius: 10px; /* Add rounded corners to the image */
+    margin-top: 20px; 
+    margin-left: 5%;
+}
+
+
+.project-section {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff; /* White background for project section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for a card-like appearance */
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center; /* Center text content */
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    justify-content: center; /* Center content horizontally */
+}
+
+.project-description {
+    flex: 1; /* Take up remaining space */
+    max-width: 60%; /* Adjust the width of the text content */
+    margin: 20px; /* Add margin around the text content */
+    color: aliceblue;
+    text-align: center;
+    position: fixed;
+    margin-top: -11%;
+    margin-left: 37%;
+}
+
+.pro h3{
+   
+    margin-left: 6%;
+    color: aliceblue;
+    text-decoration: none;  /* removes underline*/
+}
+.pro h3 a{
+    color: aliceblue;
+    text-decoration: none;  /* removes underline*/
+}
+.pro h3 :hover{
+    color: rgb(12, 12, 12);
+    background-color: rgb(212, 105, 171);
+    
+}
+@media screen and (max-width: 600px) {
+    .project-section img {
+        max-width: 100%; /* Make the image full width on smaller screens */
+    }
+}
+
+/* For screens less than or equal to 1200 pixels */
+@media only screen and (max-width: 1200px) {
+    .navbar {
+        padding: 1rem; /* Adjust padding for smaller screens */
+        text-align: center; /* Center align the navigation items */
+    }
+
+    .navbar .port {
+        margin-left: 0; /* Remove left margin for the logo */
+        float: none; /* Center the logo */
+    }
+
+    .nav {
+        text-align: center; /* Center align navigation links */
+        margin-top: 1rem; /* Add margin for spacing */
+    }
+
+    .name {
+        margin: 2rem auto; /* Center the text on smaller screens */
+        text-align: center; /* Center align the text */
+    }
+
+    .image {
+        margin: 1rem auto; /* Center the image on smaller screens */
+        text-align: center; /* Center-align the image */
+    }
+
+    .image img {
+        width: 60%; /* Decrease image size for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        display: inline-block; /* Align image as inline-block for centering */
+    }
+
+    .me2 {
+        text-align: center; /* Center-align the "me2" section */
+    }
+
+    .me2 img {
+        display: inline-block; /* Ensure the image is treated as a block element */
+        margin: 3 auto; /* Center-align the image */
+    }
+    .abt {
+        margin: 1rem auto; /* Center the text on smaller screens */
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .contact {
+        text-align: center; /* Center-align the contact section */
+    }
+
+    .contact img {
+        margin: 0 auto; /* Center-align the contact images */
+    }
+
+    .contact span {
+        display: inline-block; /* Ensure each contact item appears on the same line */
+        margin: 0 1rem; /* Add margin for spacing between contact items */
+    }
+    
+    .project-section img {
+        width: 100%; /* Make the image full width on smaller screens */
+        height: 100%;
+    }
+    
+}
+
+
+
+.dark-text {
+    color: #000; /* Set the text color to black */
+}
+
+.dark-mode .navbar {
+    background-color: rgb(223, 174, 223); /* Set the background color of the navbar to black in dark mode */
+}
+
+.dark-mode .navbar a{
+    color: #000000; /* Set the text color of navbar links to white in dark mode */
+}
+
+.dark-mode .name {
+    color: black !important; /* Set the text color to black in dark mode */
+}
+
+.dark-mode .name span{
+    color: black !important; /* Set the text color to black in dark mode */
+}
+
+
+.dark-mode-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: plum;
+    color: #0e0d0d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5rem;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode-button:hover {
+    background-color: #e2e9e9;
+    color: black;
+}
+
+.dark-mode {
+    background-color: #ece3e3;
+    color: #eedbdb;
+}
+
+
+.footer .copyright
+{
+    background-size: cover;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1rem;
+    color: rgb(169, 59, 179);
+    border-top: rgb(136, 133, 133);
+    position: fixed;
+    bottom: 0;
+}
